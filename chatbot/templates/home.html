@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <h3>  Welcome Reza Health Centre</h3>
+      <h3> {{current_user.username}}</h3>
+
+
+   <div class="card">
+<!--      {% for post in posts %}-->
+<!--          <a href="{{ url_for('detail', post_id = post.id )}}" class="card-body"> {{ post.title }} </a>-->
+<!--      {% endfor%}-->
+   </div>
+   </br></br>
+   </br></br>
+   </br></br>
+   </br></br>
+
+   </br></br>
+   <a href="{{ url_for('login') }}" role="button" class="btn btn-primary btn-lg">Register</a>
+   <a href="{{ url_for('register') }}" role="button" class="btn btn-secondary btn-lg">Login</a>
+   <a href="{{ url_for('chatbot') }}" role="button" class="btn btn-primary btn-lg">chat with Specialist</a>
+
+{% endblock %}
+ 

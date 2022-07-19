@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+     {% include 'inc/form_errors.html' %}
+<form action="/login" method="POST" xmlns="http://www.w3.org/1999/html">
+         {{ form.csrf_token}}
+         {{ form.email.label(class='form-control-label') }} {{ form.email(class='form-control') }}
+         {{ form.password.label(class='form-control-label') }} {{ form.password(class='form-control') }}
+         {{ form.remember.label}} {{form.remember}}</br></br>
+         {{ form.submit_1 }}
+      </form>
+
+{% endblock %}
